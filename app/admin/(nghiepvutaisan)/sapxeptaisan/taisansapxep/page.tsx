@@ -19,7 +19,7 @@ import {
   AiFillDelete,
   AiTwotoneEye,
 } from "react-icons/ai";
-import TaiSanSapXepForm from "./components/taisansapxep-form";
+import TaiSanSapXepForm from "./_components/taisansapxep-form";
 import { toast } from "react-toastify";
 import ConfirmationDialog, { confirm } from "@/shared/components/confirm";
 export default function Page() {
