@@ -34,7 +34,7 @@ import loading from "@/app/admin/loading";
 import { Formik, Form } from "formik";
 import TextArea from "antd/es/input/TextArea";
 import { toast } from "react-toastify";
-import { donViChoThueServices } from '../../../../donvichothue/_services/services';
+import { donViChoThueServices } from '../../../../(danhmuc)/donvichothue/_services/services';
 import { object, string } from "yup";
 
 // export interface IListProps {

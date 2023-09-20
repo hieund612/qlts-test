@@ -1,5 +1,4 @@
-'use client';
-import { Metadata } from 'next';
+'use client'
 import { useEffect, useState } from 'react';
 import { AuthService } from '@/shared/services';
 import { useRouter } from 'next/navigation';
@@ -25,11 +24,6 @@ ChartJS.register(
     Tooltip,
     Legend
 );
-
-export const metadata: Metadata = {
-    title: 'quan tri',
-    description: 'quan tri nextjs13',
-};
 
 export default function Page() {
     const { getOauth } = AuthService();

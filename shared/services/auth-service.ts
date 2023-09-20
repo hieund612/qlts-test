@@ -1,5 +1,5 @@
-'user client'
 import axios from "axios";
+import { ApiUrl } from "@/public/app-setting";
 import { Login } from "../model"
 export const AuthService = () => {
     const login = async (data: { username: string; password: string }) => {
@@ -7,9 +7,12 @@ export const AuthService = () => {
             grant_type: "password",
             username: data.username,
             password: data.password,
+            client_id: 'EPS',
+            client_secret: 'b0udcdl8k80cqiyt63uq',
         };
+
         try {
-            const res: any = await axios.post("api/login", body);
+            const res: any = await axios.post(ApiUrl + "api/token/auth", body);
             setOauth(res.data);
             return true;
         } catch (err) {
