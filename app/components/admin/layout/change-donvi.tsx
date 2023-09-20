@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import { TanetSelectTree } from "@/lib";
 import { useEffect, useState } from "react";
 import { notificationServices } from "@/app/admin/(tienich)/notification/services";
-import { donViNoiBoServices } from "@/app/admin/donvinoibo/_services/services";
+import { donViNoiBoServices } from "@/app/admin/(danhmuc)/donvinoibo/_services/services";
 import { AuthService } from "@/shared/services";
 import { MdChangeCircle } from "react-icons/md";
 
